@@ -1,0 +1,603 @@
+body {
+    background-color: rgb(255, 212, 201);
+    width: 100%;
+    height: 100%;
+}
+
+.h {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    background-color: #a52828;
+}
+
+.h ul {
+    display: flex;
+    justify-content: center;
+}
+
+.h ul li {
+    line-height: 45px;
+    text-align: center;
+}
+
+.h .search {
+    position: absolute;
+    display: block;
+    right: 200px;
+    top: 0;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.h .search input[type="text"] {
+    position: relative;
+    padding-left: 35px;
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.h .search::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    /*background-color: black;*/
+    top: 8px;
+    background-image: url("../images/search.png");
+    background-size: cover;
+    border-radius: 30px 0 0 30px;
+}
+
+.logo {
+    position: absolute;
+    left: 80px;
+    width: 150px;
+    height: 150px;
+    /*background-color: pink;*/
+    background-image: url("../images/tx.png");
+    background-size: cover;
+}
+
+.floatSheet {
+    z-index: 2;
+    border: 1px solid black;
+    width: 251px;
+    height: 200px;
+    background-color: pink;
+    position: fixed;
+    right: -200px;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    border-radius: 13px 0 0 13px;
+    transition: all 0.5s ease;
+}
+
+.floatSheet:hover {
+    right: 0;
+}
+
+.floatSheet .expose {
+    width: 50px;
+    height: 100%;
+    float: left;
+    /*background-color: greenyellow;*/
+    border-radius: 13px 0 0 13px;
+    border-right: 1px dashed black;
+    font-size: 25px;
+    text-align: center;
+}
+
+.floatSheet .hidden {
+    position: relative;
+    width: 75%;
+    height: 100%;
+    float: left;
+    /*background-color: purple;*/
+}
+
+.floatSheet .hidden section {
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    /*background-color: greenyellow;*/
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.floatSheet .hidden div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /*background-color: greenyellow;*/
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    bottom: 60px;
+}
+
+.floatSheet .hidden .le {
+    left: 40px;
+}
+
+.floatSheet .hidden .pau {
+    left: 80px;
+}
+
+.floatSheet .hidden .ri {
+    left: 120px;
+}
+
+.h ul li:nth-child(2n+1) {
+    font-size: 20px;
+    color: white;
+    float: left;
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    /*background-color: pink;*/
+    transition: all 0.5s ease;
+}
+
+.h ul li:nth-child(2n) {
+    float: left;
+    margin: 0 20px;
+}
+
+.h ul li:nth-child(2n+1):hover {
+    font-weight: 800;
+    color: #e8926d;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.46);
+}
+
+.imgBox {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-bottom: 2px solid #b2b2b2;
+    /*background-color: rgb(255, 212, 201);*/
+}
+
+.w {
+    width: 1300px;
+    height: 100%;
+    /*background-color: greenyellow;*/
+    margin: 0 auto;
+}
+
+.imgBox .w {
+    /*border: 1px solid #b2b2b2;*/
+    border-left: 2px solid #b2b2b2;
+    border-right: 2px solid #b2b2b2;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.imgBox .foldBox {
+    width: 17%;
+    position: absolute;
+    /*background-color: pink;*/
+    right: 0;
+    top: 0;
+}
+
+.imgBox .foldBox ul li {
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.imgBox .foldBox ul li:nth-child(1) {
+    background-color: purple;
+}
+
+.imgBox .foldBox ul li:nth-child(3) {
+    background-color: greenyellow;
+}
+
+.imgBox .foldBox ul li:nth-child(5) {
+    background-color: skyblue;
+}
+
+.imgBox .foldBox ul li:nth-child(7) {
+    background-color: pink;
+}
+
+.imgBox .foldBox ul li:nth-child(9) {
+    background-color: hotpink;
+}
+
+.imgBox .foldBox ul li:nth-child(11) {
+    background-color: red;
+}
+
+.imgBox .foldBox ul li:nth-child(13) {
+    background-color: green;
+}
+
+.imgBox .foldBox ul li:nth-child(15) {
+    background-color: gold;
+}
+
+.imgBox .foldBox ul li:nth-child(17) {
+    background-color: rosybrown;
+}
+
+.imgBox .foldBox ul li:nth-child(19) {
+    background-color: cornflowerblue;
+}
+
+.imgBox .foldBox ul li:nth-child(2n) {
+    text-indent: 2em;
+    font-size: 20px;
+}
+
+.bodyer {
+    height: 1401px;
+    width: 100%;
+    /*background-color: rgb(255, 212, 201);*/
+    border-bottom: 2px solid #b2b2b2;
+}
+
+.bodyer .center {
+    width: 86%;
+    height: 1401px;
+    /*background-color: #000000;*/
+    margin: 0 auto;
+    background-color: rgb(245,245,245);
+    border-bottom: 2px solid #b2b2b2;
+    border-left: 2px solid #b2b2b2;
+    border-right: 2px solid #b2b2b2;
+}
+
+.imgBox .foldBox ul li.hid {
+    display: none;
+}
+
+.imgBox .foldBox ul li {
+    transition: height 1s;
+}
+
+.imgBox .foldBox ul li.act {
+    /*transition: all 1s ease;*/
+    display: block;
+    height: 180px;
+    background-color: rgba(227, 227, 229, 0.61);
+}
+
+.bodyer .center .firVideo {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /*background-color: pink;*/
+    /*border-radius: 30px;*/
+    padding: 30px;
+}
+
+.bodyer .center .firVideo::after {
+    z-index: -1;
+    content: '';
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background-color: rgba(233, 239, 67, 0.87);
+    left: 50%;
+    top: 50%;
+    transform-origin: top left;
+    animation: rotate linear 3s infinite;
+}
+
+.bodyer .center .firVideo::before {
+    z-index: -1;
+    content: '';
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background-color: rgba(232, 57, 57, 0.87);
+    left: 50%;
+    top: 50%;
+    animation: rotate linear 3s infinite;
+    transform-origin: top left;
+    transform: translateX(-1000px);
+}
+
+.bodyer .center .firVideo .lt {
+    z-index: -1;
+    content: '';
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background-color: rgba(88, 241, 207, 0.87);
+    left: 50%;
+    top: 50%;
+    animation: rotate linear 3s infinite;
+    transform-origin: top left;
+    transform: translateX(-1000px) translateY(-1000px);
+}
+
+.bodyer .center .firVideo .rt {
+    z-index: -1;
+    content: '';
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background-color: rgba(137, 230, 76, 0.87);
+    left: 50%;
+    top: 50%;
+    animation: rotate linear 3s infinite;
+    transform-origin: top left;
+    transform: translateY(-1000px);
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.bodyer .center .firVideo .videoBox {
+    height: 100%;
+    width: 772px;
+    float: left;
+    background-color: rgba(246, 166, 133, 0.76);
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+}
+
+.bodyer .center .firVideo .videoBox video {
+    width: 100%;
+    height: 100%;
+}
+
+.bodyer .center .firVideo .pBox {
+    height: 100%;
+    width: 871px;
+    float: left;
+    /*background-color: rgb(239, 196, 171);*/
+    background-image: url("../images/mainback.jpg");
+    background-size: cover;
+    font-weight: 800;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 13px white;
+    text-align: center;
+    line-height: 200px;
+    font-family: '新宋体';
+    border-radius: 0 8px 8px 0;
+}
+
+.fixFooter {
+    border-top: 1px dashed black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(35, 34, 34, 0.71);
+    transition: all 1s;
+}
+
+.fixFooter .hiderBut {
+    color: white;
+    background-color: rgba(35, 34, 34, 0.71);
+    border: 1px black dashed;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 20px 20px 0 0;
+}
+
+.bodyer .center .textBox {
+    height: 900px;
+    width: 100%;
+    /*background-color: pink;*/
+    padding: 30px;
+}
+
+.bodyer .center .textBox ul li {
+    margin: 15px auto;
+    width: 100%;
+    height: 205px;
+    background-color: white;
+}
+
+.bodyer .center .textBox ul li:first-child {
+    margin-top: -10px;
+}
+
+
+.fixFooter .musicBox p {
+    position: absolute;
+    top: 0;
+    left: 43%;
+    transform: translateX(-50%);
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    font-family: '华文宋体';
+    color: white;
+    text-shadow: white 0 0 13px;
+}
+
+.bodyer .center .textBox ul li .litteImgBox{
+    width: 450px;
+    height: 100%;
+    background-color: purple;
+}
+
+.bodyer .center .textBox ul li:nth-child(2n+1) .litteImgBox {
+    float: left;
+}
+
+.bodyer .center .textBox ul li:nth-child(2n) .litteImgBox {
+    float: right;
+}
+
+.bodyer .center .textBox ul li p {
+    padding: 10px;
+    margin: 0 auto;
+    /*background-color: green;*/
+    font-size: 20px;
+    line-height: 34px;
+    text-indent: 2em;
+}
+
+.bodyer .center .firVideo .pBox:hover::before {
+    content: '欲言又止就是答案\A答非所问也是';
+    display: block;
+    width: 871px;
+    height: 100%;
+    background-color: rgba(72, 70, 70, 0.6);
+    white-space: pre-wrap;
+    backdrop-filter: blur(10px);
+}
+
+/*emmmm没用到清除浮动*/
+/*.comment::after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    height: 0;*/
+/*    clear: both;*/
+/*    visibility: hidden;*/
+/*}*/
+
+.comment {
+    width: 100%;
+    height: 880px;
+    /*background-color: hotpink;*/
+    padding: 20px;
+}
+
+.comment .title {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-family: '华文宋体';
+    color: white;
+    text-shadow: 0 0 13px white;
+}
+
+.comment .commentInputArea {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    /*background-color: purple;*/
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 5px solid #f38484;
+    margin-top: 20px;
+
+}
+
+.comment .commentInputArea .fire {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    bottom: 10px;
+    right: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.comment .commentInputArea textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 20px;
+    background-color: rgba(251, 201, 157, 0.58);
+}
+
+.comment .displayArea {
+    /*background-color: purple;*/
+    width: 88%;
+    height: 0;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.comment .displayArea ul li {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #6f7d55;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 4px solid black;
+}
+
+.comment .displayArea ul li .txBox {
+    width: 180px;
+    height: 180px;
+    /*background-color: purple;*/
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.comment .displayArea ul li .cord {
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    background-color: greenyellow;
+    top: 0;
+    left: 200px;
+}
+
+.comment .displayArea ul li .name {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    /*background-color: purple;*/
+    top: 6px;
+    left: 220px;
+    color: white;
+    font-size: 20px;
+    font-family: '新宋体';
+    text-align: left;
+    line-height: 30px;
+}
+
+.comment .displayArea ul li .speak {
+    position: absolute;
+    width: 1400px;
+    height: 145px;
+    /*background-color: purple;*/
+    top: 40px;
+    left: 220px;
+    text-indent: 2em;
+    font-size: 25px;
+    color: black;
+    font-family: '新宋体';
+}
+
+.fixFooter .musicBox section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 230px;
+    height: 45px;
+    /*background-color: purple;*/
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}

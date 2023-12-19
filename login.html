@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录 哦 亲 ~</title>
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/logbackground.css">
+</head>
+<body>
+<div class="Main">
+    <div class="logTextArea">
+        <div class="headIcon">
+            <img src="images/tx.png" alt="李菜菜">
+        </div>
+        <div class="inputArea">
+            <input type="text" class="account" placeholder="账号 (5-11位QQ号码的邮箱)">
+            <input type="text" class="password" placeholder="您设置的密码捏">
+            <div class="buttonArea">
+                <button class="fr">登录 !</button>
+                <button class="se">去注册 ~</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            const box = document.querySelector('.Main')
+            box.classList.add('active')
+        })
+
+        const inp = document.querySelector('.Main .logTextArea .inputArea .account')
+        inp.addEventListener('click', (e) => {
+            e.style.transform = 'perspective(1200px) translateY(500px)'
+        })
+
+        const log = document.querySelector('.Main .logTextArea .inputArea .buttonArea .fr')
+        log.addEventListener('click', () => {
+            const jud = document.querySelector('.Main .logTextArea .inputArea .account')
+            console.log(jud.value)
+            if (/^[1-9][0-9]{4,10}@qq.com$/.test(jud.value)) location.href = 'index.html'
+            else {
+                alert('账号格式是否正确捏 ? ')
+                jud.value = ''
+                document.querySelector('.Main .logTextArea .inputArea .password').value = ''
+            }
+        })
+
+        const reg = document.querySelector('.Main .logTextArea .inputArea .buttonArea .se')
+        reg.addEventListener('click', () => {
+            location.href = 'regis.html'
+        })
+    </script>
+</div>
+</body>
+</html>

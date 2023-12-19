@@ -1,0 +1,58 @@
+.Main5 {
+    display: none;
+}
+
+.Main5 .main5FirVideo {
+    margin: 10px auto;
+    width: 100%;
+    height: 500px;
+    /*background-color: mediumspringgreen;*/
+}
+
+.Main5 .main5FirVideo .main5VideoBox {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    /*background-color: purple;*/
+    background-image: url("../images/loginback.png");
+    background-size: cover;
+    border-radius: 40px;
+    border: 3px dashed red;
+}
+
+.Main5 .main5PictureWall {
+    width: 85%;
+    height: 600px;
+    background-color: greenyellow;
+    margin: 0 auto;
+    border: 3px solid red;
+}
+
+.Main5 .main5PictureWall ul li {
+    overflow: hidden;
+    width: 20%;
+    height: 600px;
+    float: left;
+    background-color: red;
+}
+
+.Main5 .main5PictureWall ul li img {
+    /*width: 100%;*/
+    height: 100%;
+}
+
+.Main5 .main5TextWall {
+    width: 85%;
+    height: 600px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 35px;
+    border-radius: 50px;
+    border: red dashed 3px;
+    /*text-indent: 2em;*/
+    font-size: 40px;
+    font-family: '新宋体';
+    text-align: center;
+    line-height: 90px;
+    text-shadow: black 0 0 5px;
+}
